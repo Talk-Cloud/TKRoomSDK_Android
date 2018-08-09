@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">talksdkdemo</string>
+    <string name="remind">Remind</string>
+    <string name="sure">sure</string>
+    <string name="app_prompt_two">  Waiting for remote users</string>
+    <string name="camera_hint">Please allow talkcloud camera to access your camera in the "Settings" option of your mobile phone.</string>
+    <string name="app_prompt_one"> 1 This demo only supports 1v1 video calling </string>
+    <string name="mic_hint">Please allow talkcloud access to your microphone in the "Settings" option of the mobile phone.</string>
+    <string name="title_activity_login">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_type">角色类型不能为空！</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">教室号不能为空！</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

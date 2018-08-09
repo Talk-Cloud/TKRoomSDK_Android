@@ -1,0 +1,37 @@
+进入房间
+	您需要提前预约好房间，详见会议接口文档
+	Activity activity 当前界面的Activity
+	
+	param：Map格式，内含进入房间所需的基本参数，例如：
+	HashMap<String, Object> params = new HashMap<String, Object>();
+	params.put("serial", "12345678"); 房间号
+	params.put("password", "1111"); 预约房间时指定的密码，注意不同身份对应不同密码
+	params.put("host","global.talk-cloud.net");服务器地址，通常是global.talk-cloud.net
+	params.put("port",80);服务器http端口，通常是80
+	params.put("nickname","tom");本地用户的昵称
+	//params.put("uiserid","111");用户id，可选
+	params.put("clientType","2");设备类型1 PC 2 Android 3 iOS
+	//uiserid(用户ID，可选)、password(密码)、 clientType(设备类型1 PC 2 Android 3 iOS)
+
+
+        public void joinRoom(Activity activity,Map<String,Object> map)
+
+进入回放房间
+        StartPage_Activity.this  当前界面的引用
+        temp：string类型.回放地址
+        RoomClient.getInstance().joinPlayBackRoom(StartPage_Activity.this, temp);
+
+
+调用joinRoom方法之后如果加入房间不成功，会有相对应的错误回掉
+实现JoinMeetingCallback接口重写callback方法，方法参数errorCode错误码
+
+	errorCode = 4008 房间密码错误
+	errorCode = 4110 该房间需要密码，请输入密码
+	errorCode = 4007 房间不存在
+	errorCode = 3001 服务器过期
+	errorCode = 3002 公司被冻结
+	errorCode = 3003 房间被删除或过期
+	errorCode = 4109 认证错误
+	errorCode = 4103 房间人数超限
+	其他 当前网络不可用
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">拓课云SDK</string>
+    <string name="remind">提示</string>
+    <string name="sure">确定</string>
+    <string name="app_prompt_two">等待远程用户</string>
+    <string name="app_prompt_one"> 1 这个演示程序只支持1v1视频通话 </string>
+    <string name="mic_hint">请在手机的“设置”选项中，允许拓课云访问你的麦克风。</string>
+    <string name="camera_hint">请在手机的“设置”选项中，允许拓课云访问你的摄像头。</string>
+</resources>

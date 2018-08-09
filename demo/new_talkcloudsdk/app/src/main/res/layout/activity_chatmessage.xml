@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#80ffffff"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_message"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_marginBottom="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:background="#FBFEFF"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4.5"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/send_chatmessage"
+            android:textColorHint="#999696"
+            android:textSize="13sp"
+            android:paddingLeft="10dp"
+            android:textColor="#2D2929"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:hint="按回车键发送您的消息"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/send"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

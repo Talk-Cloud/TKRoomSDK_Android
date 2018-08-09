@@ -1,0 +1,34 @@
+版本说明 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+1 仅支持android api level19及以上，需要android studio开发环境	
+
+版本历史 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+2.2.10
+发布日期:2018-8-6
+修改内容:服务器线路自动选择优化bug修复
+         断网时可以看本地视频
+         添加音视频数据首帧回调函数
+         void onFirstVideoFrame(String peerID, int mediaType, int width, int height);
+         void onFirstAudioFrame(String peerID, int mediaType);
+         修复bug
+         内存优化
+
+
+2.2.9
+发布日期:2018-7-20
+修改内容:内存泄漏优化
+         部分机型看不见自己视频的bug修复
+         网络状态数据变化接口优化
+         纯音教室切换稳定性优化
+         兼容系统8.0获取CPU参数
+         支持64位
+         大并发支持添加接口 getRoomUsers,getRoomUserNum
+         TKMediaFrameObserver 接口类添加监听音视频原始数据
+         onAudioVolume 监听本地音频返0的问题就修复
+         setAttributes 接口添加
+         socket.io与第三方冲突修改
+         底层库与第三方冲突修改
+         优化音视频
+
+    	
